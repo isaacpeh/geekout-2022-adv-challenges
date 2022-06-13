@@ -29,7 +29,7 @@ jobs:
     # Name the Job
     name: Lint Code Base
     # Set the agent to run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     ##################
     # Load all steps #
@@ -53,4 +53,3 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           # Change to 'master' if your main branch differs
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
