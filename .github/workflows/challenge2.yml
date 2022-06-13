@@ -27,3 +27,5 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+      - name: Lint Code Base
+        uses: github/super-linter@v4
